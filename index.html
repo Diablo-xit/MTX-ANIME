@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>MTx moteur de recherche</title>
+  <title>MTX ANIME v1.0</title>
   <style>
     body {
       background: #f4f4f9;
@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
       color: #333;
+    
     }
 
     h1 {
@@ -28,18 +29,44 @@
       color: #555;
     }
 
+    .top-bar {
+      display: flex;
+      flex-direction: column; /* Aligner verticalement */
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* Espace entre la barre de recherche et le bouton Contact */
+      margin-top: 20px;
+    }
+
     .gcse-search {
-      margin: 20px auto;
       max-width: 600px;
-      display: block;
+      height: 80px;
+      padding: 10px;
       text-align: center;
+      font-size: 40px;
+    }
+
+    nav {
+      background-color: #007bff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
       text-align: center;
       background-color: #ffffff;
       padding: 40px;
-      margin: 20px auto;
+      margin: 40px auto 20px; /* Marge pour laisser de l'espace sous la barre de recherche et le bouton */
       max-width: 700px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
@@ -56,23 +83,6 @@
       margin: 0;
     }
 
-    nav {
-      background-color: #007bff;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.2em;
-      margin: 0 15px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
     .footer {
       background-color: #f8f9fa;
       text-align: center;
@@ -87,6 +97,13 @@
 </head>
 <body>
 
+  <div class="top-bar">
+    <div class="gcse-search"></div>
+    <nav>
+      <a href="https://www.facebook.com/profile.php?id=100093259613472">Contact</a>
+    </nav>
+  </div>
+
   <div class="container">
     <div class="header">
       <h1>MTX ANIME</h1>
@@ -94,13 +111,6 @@
     <h1>MTX ANIME v1.0</h1>
     <i>Regarder vos séries de mangas préférées, gratuitement ! 😊</i>
     <b>SAISISSEZ LE NOM DE L'ANIME'</b>
-
-    <nav>
-     
-      <a href="https://www.facebook.com/profile.php?id=100093259613472">Contact</a>
-    </nav>
-
-    <div class="gcse-search"></div>
   </div>
 
   <script async src="https://cse.google.com/cse.js?cx=e3079cd1a8a954de3"></script>
@@ -110,4 +120,4 @@
   </div>
 
 </body>
-</html>
+      </html>
